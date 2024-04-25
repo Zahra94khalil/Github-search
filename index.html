@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Github Search</title>
+  <link rel="stylesheet" href="./assets/style/style.css">
+
+</head>
+
+<body>
+
+  <div class="background">
+  <div class="container">
+    <div class="logo">
+      <img src="./assets/img/icons8-github-64.png" alt="Github">
+      <h1>Github search</h1>
+    </div>
+    <div class="form-wrapper">
+      <form class="form">
+        <input type="text" placeholder="search user..." name="text"
+          onblur="if(this.value=='')this.value='search users ...'" onfocus="this.value=''">
+        <div class="buttons-wrapper">
+          <button class="submit-btn" id="submit-btn">Search</button>
+      </form>
+      <button class="clear-btn">Clear</button>
+    </div>
+  </div>
+  <hr>
+  <div class="spinner"></div>
+  <div class="users-wrapper" hidden="true">
+  </div>
+  </div>
+</div>
+
+  <script src="./assets/js/app.js">
+  </script>
+
+</body>
+
+</html>
